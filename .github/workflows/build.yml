@@ -26,9 +26,17 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
            name: 'github-pages'
-           path: build/
+           path: build
+  deploy:
+    
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
-        with: 
-          token: ${{ secrets.GITHUB_TOKEN }}
-          name: 'github-pages'
