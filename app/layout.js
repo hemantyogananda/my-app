@@ -7,7 +7,7 @@ export const metadata = {
     return (
       <html lang="en">
         <body>
-          <div id="root">hello</div>
+          <div id="root">hello123</div>
         </body>
       </html>
     )
