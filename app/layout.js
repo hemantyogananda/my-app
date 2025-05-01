@@ -1,13 +1,11 @@
-export const metadata = {
-    title: 'My App',
-    description: 'My App is a...',
-  }
+import { metadata } from "./metadata";
+
    
-  export default function RootLayout({children}) {
+  export default function RootLayout() {
     return (
       <html lang="en">
         <body>
-          <div id="root">{children}</div>
+          <div id="root">{ metadata.title }</div>
         </body>
       </html>
     )
