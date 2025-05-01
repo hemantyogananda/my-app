@@ -1,4 +1,5 @@
 {
+    "homepage": "https://hemantyogananda.github.io/my-app/",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
