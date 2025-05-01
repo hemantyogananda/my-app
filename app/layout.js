@@ -3,11 +3,11 @@ export const metadata = {
     description: 'My App is a...',
   }
    
-  export default function RootLayout() {
+  export default function RootLayout({children}) {
     return (
       <html lang="en">
         <body>
-          <div id="root">hello8080</div>
+          <div id="root">{children}</div>
         </body>
       </html>
     )
