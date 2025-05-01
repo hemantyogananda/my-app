@@ -5,7 +5,7 @@ import { metadata } from "./metadata";
     return (
       <html lang="en">
         <body>
-          <div id="root">{ metadata.title - metadata.description }</div>
+          <div id="root">{ metadata.title} -  {metadata.description }</div>
         </body>
       </html>
     )
