@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on: 
   push:
-    branches: [ deploy-to-gh-pages ]
+    branches: [ gh-pages, main ]
 
 permissions:
   contents: read  
@@ -23,7 +23,7 @@ jobs:
       - name: Build Project
         run: npm run build      
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v3   
+        uses: actions/upload-artifact@v4
         with:
            name: 'github-pages'
            path: build
