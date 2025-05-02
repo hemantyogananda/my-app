@@ -1,13 +1,12 @@
 import React from 'react'
-import RootLayout from './layout'
+import Layout from './layout'
 
-function home({props}) {
+function home() {
   return (
-    <RootLayout>
+    <Layout>
         <h1>Welcome to the Home Page</h1>
-        <h4>{props.metadata.title}</h4>
         <p>This is the main content of the home page.</p>
-    </RootLayout>
+    </Layout>
   )
 }
 
